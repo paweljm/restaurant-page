@@ -1,43 +1,7 @@
 const createHome = (() => {
     const create = () => {
-        const body = document.querySelector('body');
-    //create Nav and Main elements
-        const nav = document.createElement('nav');
-        const main = document.createElement('main');
-
-    //create direct children of Nav
-        //create h1 + textContent
-        const h1 = document.createElement('h1');
-        h1.textContent = 'FOOD';
-        //creating Unordered List and the List elements to contain
-        const ul = document.createElement('ul');
-        const liHome = document.createElement('li');
-        const liMenu = document.createElement('li');
-        const liContact = document.createElement('li');
-        //creating link and textContent for li elements
-        const liHomeLink = document.createElement('a');
-        liHomeLink.textContent = 'Home';
-        const liMenuLink = document.createElement('a');
-        liMenuLink.textContent = 'Menu';
-        const liContactLink = document.createElement('a');
-        liContactLink.textContent = 'Contact';
-        //adding href to links and appending to li
-        liHomeLink.setAttribute('href','#');
-        liMenuLink.setAttribute('href','#');
-        liContactLink.setAttribute('href','#');
-        liHome.appendChild(liHomeLink);
-        liContact.appendChild(liContactLink);
-        liMenu.appendChild(liMenuLink);
-        //appending li to ul
-        ul.appendChild(liHome);
-        ul.appendChild(liMenu);
-        ul.appendChild(liContact)
-        //appending h1 and ul to nav
-        nav.appendChild(h1);
-        nav.appendChild(ul);
-        //appending nav to body
-        body.appendChild(nav);
-
+        const main = document.querySelector('main');
+        main.innerHTML = "";
         //Creating divs for main and adding classes
         const divLeft = document.createElement('div');
         divLeft.classList.add('left');
@@ -66,14 +30,8 @@ const createHome = (() => {
         //append divs to main
         main.appendChild(divLeft);
         main.appendChild(divRight);
-        //appending main to body
-        body.appendChild(main);
     }
-    const remove = () => {
-        main.remove();
-        nav.remove();
-    }
-    return {create,remove};
+    return {create};
 })();
 
 export {createHome};

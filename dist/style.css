@@ -108,3 +108,73 @@ main h2 {
     margin: 0.6em 3em 2.5em 3em;
     color: rgba(245, 245, 245, 0.4)
 }
+
+.menu-div {
+    border: #8F7258 1px solid;
+    margin: 1px;
+    float: left;
+    width: 33vw;
+    height: 90%;
+    padding: 1.6em;
+}
+.menu-div h2{
+    text-align: center;
+    text-decoration:underline;
+}
+.menu-div p {
+    font-size: 1.3em;
+    color: rgba(245, 245, 245, 0.5);
+    margin-top: 1em;
+}
+.menu-div span {
+    float:right;
+}
+
+.contact-container {
+    border: #8F7258 double 5px;
+    margin: 1.5em;
+    height: 85%;
+    padding:1.7em
+}
+iframe {
+    height: 80%;
+    width:80%;
+    border: solid #8F7258 5px;
+    margin-top: 1em;
+}
+.contact-div {
+    border: green solid 0px;
+    height: 100%;
+    width: 50%;
+    float: left;
+
+    text-align: center;
+}
+.contact-div p {
+    font-size: 1.3em;
+    color: rgba(245, 245, 245, 0.5);
+    margin-top: 0.3em;
+}
+.contact-div h3 {
+    color: #8F7258;
+    margin-top: 2em;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+
+
+
+
+* {
+    animation: fade-in;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+
+    user-select: none;
+}
+
+@keyframes fade-in {
+    0% {opacity: 0;}
+    100% {opacity:1}
+}
